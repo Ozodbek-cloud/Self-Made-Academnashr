@@ -5,7 +5,9 @@
     text-decoration: none;
     list-style: none;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -55,6 +57,7 @@
 }
 
 .for-feature {
+    max-width: 190%;
     width: 1920px;
     height: 500px;
     background-color: #252420;
@@ -226,4 +229,20 @@
 
 .lists li:hover {
     color: #fd7905;
+}
+
+
+@media(max-width: 992px) {
+    .for-feature img {
+        position: static;
+        margin-top: 50px;
+        margin-right: 700px;
+    }
+    .for-feature {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+    }
 }
